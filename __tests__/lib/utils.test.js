@@ -2,7 +2,7 @@ import { Checkout, PricingRules } from '@/lib/utils';
 import myData from './../../src/app/items.json';
 
 describe('Checkout with pricing rules', () => {
-    test(' if you buy less than 3 Apple TVs, you will pay for regular price of $109.5 each', () => {
+    test('if you buy less than 3 Apple TVs, you will pay for regular price of $109.5 each', () => {
         const myPricingRules = new PricingRules
         const co = new Checkout(myPricingRules);
 
@@ -11,7 +11,7 @@ describe('Checkout with pricing rules', () => {
 
         expect(co.total()).toBe("219.00"); 
     });
-    test(' if you buy 3 Apple TVs, you will pay the price of 2 only', () => {
+    test('if you buy 3 Apple TVs, you will pay the price of 2 only', () => {
         const myPricingRules = new PricingRules
         const co = new Checkout(myPricingRules);
 

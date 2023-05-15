@@ -1,0 +1,30 @@
+{
+    "ipd": {
+        "id": "ipd",
+        "sku": "ipd",
+        "name": "Super Ipad",
+        "price": 549.99,
+        "currency": "$"
+    },
+    "mbp": {
+        "id": "mbp",
+        "sku": "mbp",
+        "name": "Macbook Pro",
+        "price": 1399.99,
+        "currency": "$"
+    },
+    "atv": {
+        "id": "atv",
+        "sku": "atv",
+        "name": "Apple TV",
+        "price": 109.50,
+        "currency": "$"
+    },
+    "vga": {
+        "id": "vga",
+        "sku": "vga",
+        "name": "VGA Adapapter",
+        "price": 30.00,
+        "currency": "$"
+    }
+}

@@ -32,14 +32,13 @@ export function PricingRules() {
             if (items[i].id == 'ipd') {
                 ipdCount++;
 
-                if (ipdCount == 4){
+                if (ipdCount == 5){
                     console.log(' the brand new Super iPad will have a bulk discount applied, where the price will drop to $499.99 each if someone buys more than 4' );
 
-                    individualSum[items[i].id] -=200;
-                    sum-=200; // Apply $50 discount on each 4 ipd
+                    individualSum[items[i].id] -=250;
+                    sum-=250; // Apply $50 discount on each 5 ipd
 
-                // Succeeding ipd to have a $0 discount
-                } else if (ipdCount >= 4) {
+                } else if (ipdCount > 4) {
                     console.log('the brand new Super iPad will have a bulk discount applied, where the price will drop to $499.99 each if someone buys more than 4' );
                     
                     sum += (items[i].price-50);

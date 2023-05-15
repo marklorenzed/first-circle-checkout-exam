@@ -26,16 +26,14 @@ export default function Home() {
     const myPricingRules = new PricingRules
     const co = new Checkout(myPricingRules);
 
-    
     cartItems.forEach(cartItem => {
       co.scan(cartItem);
     });
-    let discountedItems: { [key: string]: number } = co.totalPerItem()
+    let discountedItems= co.totalPerItem();
     setDiscountedPrices(discountedItems);
     setTotal(co.total());
     setIsOpen(true);
   }
-
 
   const closeModal = () => setIsOpen(false);
 
